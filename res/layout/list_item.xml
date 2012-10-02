@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+    
+    <!-- Order ID -->
+    <TextView
+        android:id="@+id/order_id_prefix"
+        android:text="Order #"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#65a000"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        />
+    
+    <TextView
+        android:id="@+id/order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/order_id_prefix"
+        android:textColor="#65a000"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:text="ID"/>
+ 
+    <!-- End Order ID -->
+    
+    <!-- Order date -->
+    <TextView
+        android:id="@+id/order_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_id"
+        android:textColor="#777"
+        android:textSize="10dip"
+        android:text="Date"
+         />
+    
+    <!-- End Order date -->
+    
+    <!-- Order Status -->
+    <TextView
+        android:id="@+id/order_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/order_id"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:text="0000"
+        android:textSize="10dip"
+        android:textColor="#65a000"/>
+    <!-- End Order Status -->
+   
+    <TextView
+        android:id="@+id/order_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/order_status"
+        android:gravity="right"
+        android:layout_marginRight="20dp"
+        android:text="0000"
+        android:textSize="14dip"
+        android:textColor="#666"
+        android:textStyle="bold"/>
+    
+    <TextView
+        android:id="@+id/order_currency"
+        android:text="IDR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/order_total"
+        android:layout_below="@id/order_status"
+        android:layout_marginRight="2dp"
+        android:textSize="14dip"
+        android:textColor="#666"
+        android:textStyle="bold"
+        />
+    
+    <ImageView 
+        android:src="@drawable/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+ 
+</RelativeLayout>

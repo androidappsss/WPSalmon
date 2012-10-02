@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+                
+        <EditTextPreference
+                android:name="Your WordPress Shop URL"
+                android:summary="Full URL format Including http://"
+                android:defaultValue="http://"
+                android:title="Website URL"
+                android:key="WPSALMON_API_HOST" />
+        
+        <EditTextPreference
+                android:name="Applicaton ID"
+                android:summary="8 Digit ID from WP SalesMon plugin admin."
+                android:defaultValue=""
+                android:title="Application ID"
+                android:key="WPSALMON_APP_ID" />
+        
+</PreferenceScreen>
