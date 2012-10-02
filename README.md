@@ -13,7 +13,7 @@ Not at all, this is a simple Android app that allows you to track your received 
 
 But the reality is, I just start learn Android development, have not enough time to focus on this app, and there are already other app similar to this and much better of course.
 
-**The point is, this is just for fun project, learning project, what i learned so far**:
+**The point is, this is just for fun project, learning project, what i have learned so far**:
 
 * How to create custom layout instead to use the original one.
 * How to style ListView.
